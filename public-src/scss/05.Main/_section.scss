@@ -6,12 +6,8 @@
     &--blue {
         background-color: $color-blue;
         padding: 75px 0 75px;
-        margin-top: 75px;
-        margin-bottom: 75px;
         @media #{$media-smp} {
             padding: 25px 0 25px;
-            margin-top: 25px;
-            margin-bottom: 25px;
         }
     }
     &--white {
