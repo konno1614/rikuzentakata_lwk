@@ -1,0 +1,72 @@
+.o-wave {
+    position: absolute;
+    padding-top: 75px;
+    width: 100%;
+    background-color: $color-blue;
+    transform: scale(-1, 1);
+    @media #{$media-smp} {
+        padding-top: 5%;
+    }
+    &::before,&::after {
+        content: "";
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+    }
+    &::before {
+        width: 55%;
+        height: 109%;
+        background-color: $color-white;
+        right: -1.5%;
+        top: 60%;
+        // animation-name: move-y_top;
+        // animation-duration: 1s;
+        // animation-timing-function: ease-in-out;
+        // animation-delay: 0s;
+        // animation-iteration-count:infinite;
+        // animation-direction: alternate;
+        // animation-fill-mode: forwards;
+        // animation-play-state: none;
+        // @keyframes move-y_top {
+        //     from {
+        //         transform: translateY(-6px);
+        //     }
+        //     to {
+        //         transform: translateY(6px);
+        //     }
+        // }
+        @media #{$media-smp} {
+            top: 70%;
+        }
+    }
+    &::after {
+        width: 55%;
+        height: 100%;
+        background-color: $color-blue;
+        left: -1.5%;
+        top: 40%;
+        // animation-name: move-y_top;
+        // animation-duration: 1s;
+        // animation-timing-function: ease-in-out;
+        // animation-delay: 0s;
+        // animation-iteration-count:infinite;
+        // animation-direction: alternate;
+        // animation-fill-mode: forwards;
+        // animation-play-state: none;
+        // @keyframes move-y_bottom {
+        //     from {
+        //         transform: translateY(-1px);
+        //     }
+        //     to {
+        //         transform: translateY(1px);
+        //     }
+        // }
+    }
+    &--top {
+        top: 0;
+        transform: scale(-1, 1) rotate(180deg);
+    }
+    &--bottom {
+        bottom: 0;
+    }
+}
