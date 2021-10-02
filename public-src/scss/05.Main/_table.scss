@@ -1,0 +1,38 @@
+.o-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 6px;
+    font-size: 1.4rem;
+    @media #{$media-smp} {
+
+    }
+    th {
+        font-weight: $font-mideum;
+        text-align: center;
+        width: 30%;
+        background-color: rgba($color: $color-darkyellow, $alpha: 1.0);
+        padding: 10px;
+        @media #{$media-smp} {
+            display: block;
+            width: 100%;
+        }
+    }
+    td {
+        width: 70%;
+        background-color: rgba($color: $color-white, $alpha: 1.0);
+        padding: 10px;
+        color: $color-black;
+        @media #{$media-smp} {
+            display: block;
+            width: 100%;
+        }
+    }
+    span {
+        &.bold {
+            font-weight: $font-bold;
+        }
+        &.accent {
+            color: $color-orange;
+        }
+    }
+}
