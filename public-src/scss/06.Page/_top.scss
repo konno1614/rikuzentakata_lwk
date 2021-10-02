@@ -1,4 +1,34 @@
 .c-top {
     @media #{$media-smp} {
     }
+    &__banner {
+        &-inner {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media #{$media-smp} {
+                flex-direction: column;
+            }
+            a {
+                display: block;
+                @media #{$media-smp} {
+                    max-width: 280px;
+                    width: 100% !important;
+                    &+a {
+                        margin-top: 10px;
+                    }
+                }
+                &.banner01 {
+                    width: 28%;
+                }
+                &.banner02 {
+                    width: 28%;
+                }
+                &.banner03 {
+                    width: 37%;
+                }
+            }
+        }
+    }
 }
