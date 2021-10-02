@@ -1,6 +1,7 @@
 import Nav from './lib/Sp-Nav'
 import PageTop from './lib/Page-Top'
-import Slider from './lib/Slider'
+import Swiper from './lib/Swiper'
+import Wave from './lib/Wave'
 
 $(function() {
     /**

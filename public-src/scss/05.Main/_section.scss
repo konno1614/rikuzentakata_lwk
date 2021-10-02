@@ -1,0 +1,20 @@
+.o-section {
+    position: relative;
+    background-color: $color-white;
+    @media #{$media-smp} {
+    }
+    &--blue {
+        background-color: $color-blue;
+        padding: 75px 0 75px;
+        @media #{$media-smp} {
+            padding: 25px 0 25px;
+        }
+    }
+    &--white {
+        background-color: $color-white;
+        padding: 75px 0;
+        @media #{$media-smp} {
+            padding: 25px 0 25px;
+        }
+    }
+}
