@@ -1,0 +1,17 @@
+<% ROOT = '.'; %>
+<%- include(ROOT + '/_const') -%>
+<% BodyClass = 'top'; %>
+<!DOCTYPE html>
+<html lang="ja" class="no-scroll">
+<%- include(ROOT + '/block/_head') -%>
+<body class="<%= BodyClass %>">
+    <%- include(ROOT + '/block/_header') -%>
+    <%- include(ROOT + '/block/_nav') -%>
+    <main class="o-main c-top">
+        <div class="o-inner">
+            Top
+        </div>
+    </main>
+    <%- include(ROOT + '/block/_footer') -%>
+</body>
+</html>

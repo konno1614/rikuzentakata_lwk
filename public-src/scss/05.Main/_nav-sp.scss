@@ -1,0 +1,25 @@
+.o-nav-sp {
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-out;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    &.is_active {
+        visibility: visible;
+        opacity: 1;
+    }
+    &__list {
+
+    }
+    &__item {
+        a {
+            color: $color-white;
+        }
+    }
+}
