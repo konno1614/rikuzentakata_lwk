@@ -4,7 +4,7 @@
     border-spacing: 6px;
     font-size: 1.4rem;
     @media #{$media-smp} {
-
+        border-collapse: collapse;
     }
     th {
         font-weight: $font-mideum;
@@ -15,6 +15,7 @@
         @media #{$media-smp} {
             display: block;
             width: 100%;
+            border-top: 6px solid $color-blue;
         }
     }
     td {
@@ -22,6 +23,7 @@
         background-color: rgba($color: $color-white, $alpha: 1.0);
         padding: 10px;
         color: $color-black;
+        letter-spacing: 1px;
         @media #{$media-smp} {
             display: block;
             width: 100%;
@@ -33,6 +35,21 @@
         }
         &.accent {
             color: $color-orange;
+        }
+        &.asterisk {
+            display: block;
+            padding-left: 1em;
+            text-indent: -1em;
+        }
+    }
+    &--gray {
+        th {
+            @media #{$media-smp} {
+                border-top: 6px solid $color-white;
+            }
+        }
+        td {
+            background-color: rgba($color: $color-gray, $alpha: .5);
         }
     }
 }

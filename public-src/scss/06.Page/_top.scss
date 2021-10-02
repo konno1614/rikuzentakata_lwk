@@ -1,7 +1,9 @@
 .c-top {
     @media #{$media-smp} {
     }
+    // バナー
     &__banner {
+        margin-bottom: 50px;
         &-inner {
             margin-top: 50px;
             display: flex;
@@ -27,6 +29,23 @@
                 }
                 &.banner03 {
                     width: 37%;
+                }
+            }
+        }
+    }
+    // 事前/事後研修の内容
+    &__contents {
+        &-block {
+            &+.c-top__contents-block {
+                margin-top: 70px;
+                @media #{$media-smp} {
+                    margin-top: 45px;
+                }
+            }
+            .o-subtitle {
+                margin-bottom: 30px;
+                @media #{$media-smp} {
+                    margin-bottom: 15px;
                 }
             }
         }
