@@ -1,0 +1,1 @@
+# rikuzentakata_lwk
