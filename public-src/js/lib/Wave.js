@@ -1,11 +1,11 @@
 $(function() {
-  // $('#wave_top_01').wavify({
-  //   height: 50,
-  //   bones: 2,
-  //   amplitude: 25,
-  //   color: '#a8d6e7',
-  //   speed: .25
-  // });
+  $('#wave_nav').wavify({
+    height: 50,
+    bones: 2,
+    amplitude: 25,
+    color: '#a8d6e7',
+    speed: .25
+  });
   // $('#wave_bottom_01').wavify({
   //   height: 50,
   //   bones: 2,

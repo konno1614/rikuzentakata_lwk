@@ -34,43 +34,83 @@
 
 <body class="top">
 	<header id="header" class="o-header">
-		<div class="o-header__inner">
-			<h1 class="o-header__logo">
-				<a href="./login/top.html">
-					<img src="http://placehold.jp/250x50.png?text=Logo" alt="SG GROUP">
-				</a>
-			</h1>
+		<div class="o-inner o-inner--wide o-header__inner">
+			<h1 class="o-header__logo">陸前高田LWK</h1>
+			<nav id="nav" class="o-nav">
+				<ul>
+					<li>
+						<a href="#about">事業概要</a>
+					</li>
+					<li>
+						<a href="#venue">開催地</a>
+					</li>
+					<li>
+						<a href="#learning">学べること</a>
+					</li>
+					<li>
+						<a href="#overall">ツアー概要</a>
+					</li>
+					<li>
+						<a href="#member">メンバー</a>
+					</li>
+					<li>
+						<a href="#apply">申し込み方法</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="o-hamburger js-toggle-nav">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<nav id="sp-nav" class="o-nav-sp">
+				<ul class="o-nav-sp__list">
+					<li class="o-nav-sp__item">
+						<a href="#about">事業概要</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#venue">モニターツアー開催地について</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#hirota">「人が魅力のまち」広田町</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#learning">モニターツアーの参加により、学べること・得られること</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#support">サポートメンバー「SET 」について</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#overall">モニターツアーの全体像</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#contents">事前／事後研修の内容</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#model">研修フレームワーク：「MV2GROWモデル」</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#overall">事前／事後研修の内容</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#method">研修フレームワーク：「SET流思考法」</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#member">サポートメンバー／ナビゲーター</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#hub">拠点</a>
+					</li>
+					<li class="o-nav-sp__item">
+						<a href="#apply">申し込み方法</a>
+					</li>
+				</ul>
+				<svg class="o-wave o-wave--top" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<path id="wave_nav" d="" />
+				</svg>
+			</nav>
 		</div>
 	</header>
-	<nav id="nav" class="o-nav">
-		<ul>
-			<li>
-				<a href="#">
-					nav01
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					nav02
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					nav03
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					nav04
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					nav05
-				</a>
-			</li>
-		</ul>
-	</nav>
 	<main class="o-main">
 		<!-- Swiper START -->
 		<div class="swiper-container">
@@ -105,7 +145,7 @@
 		<!-- <svg class="o-wave o-wave--top" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <path id="wave_top_01" d=""/>
 </svg> -->
-		<section class="o-section o-section--blue">
+		<section id="about" class="o-section o-section--blue">
 			<div class="o-inner">
 				<h2 class="o-title o-title--black">
 					事業概要
@@ -154,7 +194,7 @@
 		<!-- <svg class="o-wave o-wave--bottom" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <path id="wave_bottom_01" d=""/>
 </svg> -->
-		<section class="o-section o-section--white">
+		<section id="venue" class="o-section o-section--white">
 			<div class="o-inner">
 				<h2 class="o-title o-title--white">
 					モニターツアー<br>開催地について
@@ -165,7 +205,7 @@
 		<!-- <svg class="o-wave o-wave--top" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <path id="wave_top_02" d=""/>
 </svg> -->
-		<section class="o-section o-section--blue">
+		<section id="hirota" class="o-section o-section--blue">
 			<div class="o-inner">
 				<h2 class="o-title o-title--black">
 					「人が魅力のまち」<br>広田町
@@ -176,7 +216,7 @@
 		<!-- <svg class="o-wave o-wave--bottom" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <path id="wave_bottom_02" d=""/>
 </svg> -->
-		<section class="o-section o-section--white">
+		<section id="learning" class="o-section o-section--white">
 			<div class="o-inner">
 				<h2 class="o-title o-title--white">
 					モニターツアーの参加により、<br>学べること・得られること
@@ -186,7 +226,7 @@
 		</section>
 
 
-		<section class="o-section o-section--blue c-top__contents">
+		<section id="contents" class="o-section o-section--blue c-top__contents">
 			<div class="o-inner">
 				<h2 class="o-title o-title--black">
 					事前／事後研修の内容
@@ -255,7 +295,7 @@
 			</div>
 		</section>
 
-		<section class="o-section o-section--white">
+		<section id="apply" class="o-section o-section--white">
 			<div class="o-inner">
 				<h2 class="o-title o-title--white">
 					実施概要・申込方法
