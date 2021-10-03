@@ -1,7 +1,6 @@
 /* 全体のスタイル */
 .swiper-wrapper {
 	width: 100%;
-    max-height: 600px;
 }
 /* 全スライド共通スタイル */
 .swiper-slide {
@@ -10,5 +9,23 @@
 	text-align: center;
     img {
         width: 100%;
+    }
+}
+.swiper-image {
+    padding-top: 573px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    @media #{$media-smp} {
+        padding-top: 300px;
+    }
+    &--01 {
+        background-image: url(../img/swiper/01.png);
+    }
+    &--02 {
+        background-image: url(../img/swiper/02.png);
+    }
+    &--03 {
+        background-image: url(../img/swiper/03.png);
     }
 }

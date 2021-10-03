@@ -6,12 +6,22 @@
     z-index: 999;
     width: 100%;
     transition: .5s all ease-in-out;
+    @media #{$media-smp} {
+        padding-top: 15px;
+    }
     &.fixed {
         background: $color-white;
         border-bottom: 2px solid $color-gray;
+        @media #{$media-smp} {
+            padding-bottom: 15px;
+        }
     }
-    @media #{$media-smp} {
-        padding: 15px 0;
+    &.is_active {
+        @media #{$media-smp} {
+            background: $color-white;
+            border-bottom: 2px solid $color-gray;
+            padding-bottom: 15px;
+        }
     }
     &__inner {
         display: flex;
