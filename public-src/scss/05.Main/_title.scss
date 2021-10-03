@@ -21,10 +21,16 @@
         margin-top: 10px;
         font-size: 1.6rem;
         text-shadow: none;
+        @media #{$media-smp} {
+            font-size: 1.4rem;
+        }
     }
     &--black {
         color: $color-black;
         text-shadow:0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white,0 0 4px $color-white;
+        @media #{$media-smp} {
+            text-shadow:0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white,0 0 2px $color-white;
+        }
         span {
             color: $color-white;
         }
@@ -32,6 +38,9 @@
     &--white {
         color: $color-white;
         text-shadow:0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black;
+        @media #{$media-smp} {
+            text-shadow:0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black;
+        }
         span {
             color: $color-black;
         }

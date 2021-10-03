@@ -5,16 +5,16 @@
     }
     &--blue {
         background-color: $color-blue;
-        // padding: 75px 0 75px;
+        padding: 50px 0;
         @media #{$media-smp} {
             // padding: 25px 0 25px;
         }
     }
     &--white {
         background-color: $color-white;
-        // padding: 75px 0;
+        padding: 50px 0;
         @media #{$media-smp} {
-            // padding: 25px 0 25px;
+            // padding: 25px 0;
         }
     }
 }
