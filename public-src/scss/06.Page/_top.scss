@@ -1,6 +1,44 @@
 .c-top {
     @media #{$media-smp} {
     }
+    // common
+    &__common-text {
+        margin-top: 30px;
+        @media #{$media-smp} {
+            margin-top: 15px;
+        }
+        a {
+            color: $color-orange;
+        }
+    }
+    h4 {
+        margin-top: 30px;
+        font-size: 1.8rem;
+        line-height: 1;
+        font-weight: $font-mideum;
+        display: flex;
+        align-items: center;
+        @media #{$media-tablet} {
+            font-size: 1.6rem;
+            margin-top: 15px;
+        }
+        &::before,&::after {
+            content: "";
+            display: inline-block;
+            width: 30px;
+            height: 3px;
+            background-color: $color-blue;
+            @media #{$media-tablet} {
+                width: 20px;
+            }
+        }
+        &::before {
+            margin-right: 10px;
+        }
+        &::after {
+            margin-left: 10px;
+        }
+    }
     // メイン
     &__main-area {
         position: relative;
@@ -116,15 +154,6 @@
     }
     // モニター開催地について
     &__venue {
-        &-text {
-            margin-top: 30px;
-            @media #{$media-smp} {
-                margin-top: 15px;
-            }
-            a {
-                color: $color-orange;
-            }
-        }
         &-flex {
             display: flex;
             align-items: center;
@@ -153,34 +182,6 @@
                 @media #{$media-smp} {
                     width: 48%;
                 }
-            }
-        }
-        h4 {
-            margin-top: 30px;
-            font-size: 1.8rem;
-            line-height: 1;
-            font-weight: $font-mideum;
-            display: flex;
-            align-items: center;
-            @media #{$media-tablet} {
-                font-size: 1.6rem;
-                margin-top: 15px;
-            }
-            &::before,&::after {
-                content: "";
-                display: inline-block;
-                width: 30px;
-                height: 3px;
-                background-color: $color-blue;
-                @media #{$media-tablet} {
-                    width: 20px;
-                }
-            }
-            &::before {
-                margin-right: 10px;
-            }
-            &::after {
-                margin-left: 10px;
             }
         }
         &-access {
@@ -250,12 +251,6 @@
     }
     // 「人が魅力のまち」広田町
     &__hirota {
-        &-text {
-            margin-top: 30px;
-            @media #{$media-smp} {
-                margin-top: 15px;
-            }
-        }
         &-flex {
             margin-top: 30px;
             display: flex;
@@ -320,9 +315,40 @@
             }
         }
     }
+
+    // サポートメンバー「SET」について
+    &__support {
+
+        &-flex {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media #{$media-smp} {
+                flex-direction: column-reverse;
+                margin-top: 15px;
+            }
+            .left {
+                width: 50%;
+                @media #{$media-smp} {
+                    width: 100%;
+                    margin-top: 1em;
+                }
+                p+p {
+                    margin-top: 1em;
+                }
+            }
+            .right {
+                width: 48%;
+                @media #{$media-smp} {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
     // モニターツアーの全体像
     &__overall {
-
         &-flex {
             display: flex;
             align-items: flex-start;
@@ -362,31 +388,7 @@
                     }
                 }
                 h4 {
-                    font-size: 1.8rem;
-                    line-height: 1;
-                    font-weight: $font-mideum;
-                    display: flex;
-                    align-items: center;
                     justify-content: center;
-                    @media #{$media-tablet} {
-                        font-size: 1.6rem;
-                    }
-                    &::before,&::after {
-                        content: "";
-                        display: inline-block;
-                        width: 30px;
-                        height: 3px;
-                        background-color: $color-blue;
-                        @media #{$media-tablet} {
-                            width: 20px;
-                        }
-                    }
-                    &::before {
-                        margin-right: 10px;
-                    }
-                    &::after {
-                        margin-left: 10px;
-                    }
                 }
                 .period {
                     margin: 25px auto 0;
