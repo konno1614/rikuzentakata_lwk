@@ -37,12 +37,12 @@
     }
     &--white {
         color: $color-white;
-        text-shadow:0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black,0 0 4px $color-black;
+        text-shadow:0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue,0 0 4px $color-blue;
         @media #{$media-smp} {
-            text-shadow:0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black,0 0 2px $color-black;
+            text-shadow:0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue,0 0 2px $color-blue;
         }
         span {
-            color: $color-black;
+            color: $color-blue;
         }
     }
 }

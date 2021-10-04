@@ -116,7 +116,6 @@
     }
     // モニター開催地について
     &__venue {
-
         &-text {
             margin-top: 30px;
             @media #{$media-smp} {
@@ -245,6 +244,46 @@
                 }
                 &.text02 {
 
+                }
+            }
+        }
+    }
+    // 「人が魅力のまち」広田町
+    &__hirota {
+        &-text {
+            margin-top: 30px;
+            @media #{$media-smp} {
+                margin-top: 15px;
+            }
+        }
+        &-flex {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media #{$media-smp} {
+                margin-top: 15px;
+            }
+            .image {
+                width: 49%;
+                @media #{$media-smp} {
+                    width: 48%;
+                }
+            }
+            ul {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                @media #{$media-smp} {
+                    width: 48%;
+                }
+                li {
+                    width: 50%;
+                    @media #{$media-smp} {
+
+                    }
                 }
             }
         }

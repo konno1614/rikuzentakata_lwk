@@ -25,6 +25,9 @@
         &.blue {
             color: #3562d6;
         }
+        &.orange {
+            color: $color-orange;
+        }
     }
     &--white {
         color: $color-white;
