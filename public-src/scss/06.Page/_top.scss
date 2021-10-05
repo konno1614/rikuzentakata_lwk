@@ -123,7 +123,7 @@
         text-align: center;
         margin-top: 60px;
         @media #{$media-smp} {
-            margin-top: 20px;
+            margin-top: 25px;
             font-size: 1.0rem;
         }
         .line {
@@ -488,11 +488,45 @@
             }
         }
     }
+    // 研修フレームワーク：「MV2GROWモデル」
+    &__model {
+        &-image {
+            text-align: center;
+        }
+        &-comment {
+            text-align: center;
+            margin-top: 30px;
+            @media #{$media-smp} {
+                margin-top: 15px;
+            }
+        }
+    }
+    // 研修フレームワーク：「SET流思考法」
+    &__method {
+        &-image {
+            text-align: center;
+        }
+    }
     // サポートメンバー／ナビゲーター
     &__member {
         &-inner {
+            position: relative;
             max-width: 850px;
             margin: 0 auto;
+            .hukidashi {
+                text-align: center;
+                @media #{$media-smp} {
+                }
+                &--01 {
+                    margin-top: 50px;
+                    @media #{$media-smp} {
+                        margin-top: 30px;
+                    }
+                }
+                &--02 {
+                    // margin-top: 20px;
+                }
+            }
         }
         &-member {
             .box {
