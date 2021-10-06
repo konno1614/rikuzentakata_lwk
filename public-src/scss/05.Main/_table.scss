@@ -53,4 +53,18 @@
             background-color: rgba($color: $color-gray, $alpha: .5);
         }
     }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-blue;
+        border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        color: $color-white;
+        font-weight: $font-bold;
+        @media #{$media-smp} {
+            margin: 0 auto;
+        }
+    }
 }
