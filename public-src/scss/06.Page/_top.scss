@@ -466,7 +466,6 @@
                 @media #{$media-smp} {
                     transform: rotate(135deg);
                     margin-top: 10px;
-                    top: 0;
                 }
             }
         }
@@ -492,13 +491,6 @@
     &__model {
         &-image {
             text-align: center;
-        }
-        &-comment {
-            text-align: center;
-            margin-top: 30px;
-            @media #{$media-smp} {
-                margin-top: 15px;
-            }
         }
     }
     // 研修フレームワーク：「SET流思考法」
