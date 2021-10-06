@@ -447,6 +447,17 @@
                             padding-left: 1em;
                             text-indent: -1em;
                         }
+                        table {
+                            th {
+                                font-weight: $font-mideum;
+                                vertical-align: top;
+                                width: 70px;
+                                padding-top: 10px;
+                            }
+                            td {
+                                padding-top: 10px;
+                            }
+                        }
                     }
                 }
             }
