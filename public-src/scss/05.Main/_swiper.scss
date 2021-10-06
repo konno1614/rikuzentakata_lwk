@@ -12,7 +12,7 @@
     }
 }
 .swiper-image {
-    padding-top: 573px;
+    padding-top: 570px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -27,5 +27,11 @@
     }
     &--03 {
         background-image: url(../img/swiper/03.png);
+    }
+    &--04 {
+        background-image: url(../img/swiper/04.png);
+    }
+    &--05 {
+        background-image: url(../img/swiper/05.png);
     }
 }

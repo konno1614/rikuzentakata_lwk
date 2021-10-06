@@ -123,7 +123,7 @@
         text-align: center;
         margin-top: 60px;
         @media #{$media-smp} {
-            margin-top: 20px;
+            margin-top: 25px;
             font-size: 1.0rem;
         }
         .line {
@@ -152,6 +152,40 @@
             }
             @media #{$media-smp} {
                 height: 25px;
+            }
+        }
+    }
+    // バナー
+    &__banner {
+        margin-bottom: 50px;
+        &-inner {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media #{$media-smp} {
+                flex-direction: column;
+            }
+            a {
+                display: block;
+                width: 24%;
+                text-align: center;
+                @media #{$media-smp} {
+                    max-width: 230px;
+                    width: 100%;
+                    &+a {
+                        margin-top: 15px;
+                    }
+                }
+                &.banner01 {
+
+                }
+                &.banner02 {
+
+                }
+                &.banner03 {
+
+                }
             }
         }
     }
@@ -286,39 +320,6 @@
             }
         }
     }
-    // バナー
-    &__banner {
-        margin-bottom: 50px;
-        &-inner {
-            margin-top: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            @media #{$media-smp} {
-                flex-direction: column;
-            }
-            a {
-                display: block;
-                @media #{$media-smp} {
-                    max-width: 280px;
-                    width: 100% !important;
-                    &+a {
-                        margin-top: 10px;
-                    }
-                }
-                &.banner01 {
-                    width: 28%;
-                }
-                &.banner02 {
-                    width: 28%;
-                }
-                &.banner03 {
-                    width: 37%;
-                }
-            }
-        }
-    }
-
     // サポートメンバー「SET」について
     &__support {
         &-flex {
@@ -402,6 +403,7 @@
                     justify-content: center;
                     line-height: 1;
                     padding: 10px 15px;
+                    font-weight: $font-mideum;
                     @media #{$media-smp} {
                         margin-top: 15px;
                     }
@@ -449,6 +451,8 @@
                 }
             }
             .arrow {
+                position: relative;
+                top: 20px;
                 width: 40px;
                 height: 40px;
                 border-top: 5px solid $color-blue;
@@ -457,6 +461,7 @@
                 @media #{$media-tablet} {
                     width: 25px;
                     height: 25px;
+                    top: 10px;
                 }
                 @media #{$media-smp} {
                     transform: rotate(135deg);
@@ -478,6 +483,154 @@
                 margin-bottom: 30px;
                 @media #{$media-smp} {
                     margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    // 研修フレームワーク：「MV2GROWモデル」
+    &__model {
+        &-image {
+            text-align: center;
+        }
+    }
+    // 研修フレームワーク：「SET流思考法」
+    &__method {
+        &-image {
+            text-align: center;
+        }
+    }
+    // サポートメンバー／ナビゲーター
+    &__member {
+        &-inner {
+            position: relative;
+            max-width: 850px;
+            margin: 0 auto;
+            .hukidashi {
+                text-align: center;
+                @media #{$media-smp} {
+                }
+                &--01 {
+                    margin-top: 50px;
+                    @media #{$media-smp} {
+                        margin-top: 30px;
+                    }
+                }
+                &--02 {
+                    // margin-top: 20px;
+                }
+            }
+        }
+        &-member {
+            .box {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media #{$media-smp} {
+                    flex-direction: column;
+                }
+                &--first {
+                    margin-top: 30px;
+                    @media #{$media-smp} {
+                        margin-top: 15px;
+                    }
+                }
+                &+.box {
+                    margin-top: 50px;
+                }
+                .left {
+                    width: 30%;
+                    @media #{$media-smp} {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                .right {
+                    width: 65%;
+                    @media #{$media-smp} {
+                        width: 100%;
+                        margin-top: 20px;
+                    }
+                    .affiliation {
+                        line-height: 1;
+                        font-size: 1.8rem;
+                        font-weight: $font-mideum;
+                        @media #{$media-smp} {
+                            font-size: 1.6rem;
+                        }
+                    }
+                    h3 {
+                        line-height: 1;
+                        font-size: 2.4rem;
+                        font-weight: $font-bold;
+                        margin-top: 20px;
+                        @media #{$media-smp} {
+                            font-size: 2.0rem;
+                            margin-top: 10px;
+                        }
+                    }
+                    p {
+                        margin-top: 25px;
+                        @media #{$media-smp} {
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+        &-navigator {
+            margin-top: 80px;
+            @media #{$media-smp} {
+                margin-top: 60px;
+            }
+            .block {
+                margin-top: 30px;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                @media #{$media-smp} {
+                    margin-top: 15px;
+                }
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 31%;
+                    @media #{$media-smp} {
+                        content: none;
+                    }
+                }
+            }
+            .box {
+                width: 31%;
+                margin-bottom: 50px;
+                display: flex;flex-direction: column;
+                @media #{$media-smp} {
+                    width: 48%;
+                    margin-bottom: 30px;
+                }
+                .affiliation {
+                    line-height: 1;
+                    font-weight: $font-mideum;
+                    margin-top: 10px;
+                    @media #{$media-smp} {
+                        margin-top: 5px;
+                    }
+                }
+                h3 {
+                    line-height: 1;
+                    font-size: 2.2rem;
+                    font-weight: $font-bold;
+                    margin-top: 15px;
+                    @media #{$media-smp} {
+                        font-size: 2.0rem;
+                        margin-top: 10px;
+                    }
+                }
+                p {
+                    margin-top: 10px;
+                    font-size: 1.4rem;
+                    @media #{$media-smp} {
+                    }
                 }
             }
         }
