@@ -53,4 +53,25 @@
             background-color: rgba($color: $color-gray, $alpha: .5);
         }
     }
+    a {
+        position: relative;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-blue;
+        border-radius: 30px;
+        width: 200px;
+        height: 50px;
+        color: $color-white;
+        font-weight: $font-bold;
+        box-shadow: 0 3px 0 0 rgba($color: $color-black, $alpha: .3);
+        &:hover {
+            top: 3px;
+            box-shadow: 0 0px 0 0 rgba($color: $color-black, $alpha: .3);
+        }
+        @media #{$media-smp} {
+            margin: 0 auto;
+        }
+    }
 }
